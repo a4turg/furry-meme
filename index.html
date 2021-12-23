@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Парсим твои данные</title>
+</head>
+
+
+<body>
+        
+
+  <div class = 'top'> <!--header to top-->
+    <div class = about>
+    <p id='name'>Имя:</p>
+    <p id='secname'>Фамилия:</p> <!--lastname to secname-->
+    <p id='age'>Возраст:</p>
+    <p id='id'>Специальность:</p> <!--spec to id-->
+    <p id='birthday'>Дата:</p>
+    <p id='option'>Коротко о себе:</p> <!--about to option-->
+    <button onclick ='startjob()' class="y">Тестим что получилось</button>
+  </div>
+</div>
+
+
+    <script>
+
+        function startjob() {
+            let name = prompt('Введите ваше имя:');
+            document.getElementById('name').textContent = "Имя: " + name
+
+            let secname = prompt('Введите вашу фамилию:');
+            document.getElementById('secname').textContent = "Фамилия: " + secname
+
+            let age = prompt('Введите ваш возраст:');
+            document.getElementById('age').textContent = "Возраст: " + age
+
+            let id = prompt('Введите вашу специальность:');
+            document.getElementById('id').textContent = "Специальность: " + id
+
+            let birthday = prompt('Введите вашу дату рождения:');
+            document.getElementById('birthday').textContent = "Дата: " + birthday
+
+            let option = prompt('Дополнительно:');
+            document.getElementById('option').textContent = "Коротко о себе: " + option
+
+
+
+        }
+
+    </script>
+</body> 
+
+
+
+
+
+
+
+
+
